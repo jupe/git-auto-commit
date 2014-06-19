@@ -127,6 +127,8 @@ namespace GitAutoCommit.Core
                     }
 
                     RunGit("commit --file=-", CommitMessage);
+                    
+                    //RunGit("push origin master");
                 }
             }
             finally

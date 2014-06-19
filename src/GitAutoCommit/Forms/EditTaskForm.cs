@@ -58,6 +58,8 @@ namespace GitAutoCommit.Forms
             if (string.IsNullOrEmpty(item.Handler.Folder))
                 Text = "add task";
 
+
+            if (item.CommitMessage == null) item.CommitMessage = "";
             //normalises the line endings
             var commitMessage = item.CommitMessage
                 .Replace("\r\n", "\n")
